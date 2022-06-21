@@ -1,14 +1,15 @@
 class Product {
-  final int id;
-  final int price;
-  final double rating;
-  final String image;
-  final String description;
-  final String type; // this is enum ["men", "women", "children"]
-  final String category; // product category ["shoe", "watch", ...]
-  final int sold;
-  final int left;
+  final int id; // id
+  final int price; // narx
+  final double rating; // reyting
+  final String image; // rasm
+  final String description; // ta'rif
+  final String type; // kim uchunligi
+  final String category; // kategoriyasi
+  final int sold; // nechta sotilgani
+  final int left; // nechta qolgani
 
+  // constuctor
   Product(
       {required this.id,
       required this.price,

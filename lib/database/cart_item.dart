@@ -5,19 +5,19 @@ part 'cart_item.g.dart';
 @HiveType(typeId: 0)
 class CartItem extends HiveObject {
   @HiveField(0)
-  late String type;
+  late String type; // kim uchunligi
 
   @HiveField(1)
-  late String category;
+  late String category; // kategoriyasi
 
   @HiveField(2)
-  late String image;
+  late String image; // rasm
 
   @HiveField(3)
-  late int price;
+  late int price; // narx
 
   @HiveField(4)
-  late int id;
+  late int id; // id
 }
 
 class CartItemBox {

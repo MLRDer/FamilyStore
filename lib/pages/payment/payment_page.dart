@@ -68,7 +68,7 @@ class _PaymentPageState extends State<PaymentPage>
                   animationController.forward();
                 }),
                 const Text(
-                  "Buyurtmangiz uchun rahmat! Mahsulotlarni tez orada yetqizib beramiz!",
+                  "Buyurtmangiz uchun rahmat! Hodimlarimiz siz bilan tez orada bog'lanishadi!",
                   style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -93,7 +93,7 @@ class _PaymentPageState extends State<PaymentPage>
                   height: 30,
                 ),
                 const Center(
-                  child: Text("Karta ma'lumotlari",
+                  child: Text("Bog'lanish ma'lumotlari",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _PaymentPageState extends State<PaymentPage>
                   height: 30,
                 ),
                 const Text(
-                  "Karta raqami:",
+                  "Telefon raqami:",
                   style: TextStyle(fontSize: 14, color: kTextLightColor),
                 ),
                 TextField(
@@ -114,7 +114,7 @@ class _PaymentPageState extends State<PaymentPage>
                     enabledBorder: const OutlineInputBorder(
                         borderSide:
                             BorderSide(color: detailImageBorder, width: 1)),
-                    hintText: "0000 0000 0000 0000",
+                    hintText: "+998 88 888 88 88",
                     hintStyle: const TextStyle(color: kTextLightColor),
                     suffixIcon: IconButton(
                       icon: const Icon(
@@ -127,13 +127,13 @@ class _PaymentPageState extends State<PaymentPage>
                     ),
                   ),
                   controller: numberController,
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.phone,
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 const Text(
-                  "Yaroqlilik muddati:",
+                  "Murojaat qilish vaqti:",
                   style: TextStyle(fontSize: 14, color: kTextLightColor),
                 ),
                 TextField(
@@ -144,7 +144,7 @@ class _PaymentPageState extends State<PaymentPage>
                     enabledBorder: const OutlineInputBorder(
                         borderSide:
                             BorderSide(color: detailImageBorder, width: 1)),
-                    hintText: "MM/YY",
+                    hintText: "9:00 - 18:00",
                     hintStyle: const TextStyle(color: kTextLightColor),
                     suffixIcon: IconButton(
                       icon: const Icon(
@@ -157,13 +157,13 @@ class _PaymentPageState extends State<PaymentPage>
                     ),
                   ),
                   controller: dateController,
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.name,
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 const Text(
-                  "Karta egasi:",
+                  "Ism Sharifingiz:",
                   style: TextStyle(fontSize: 14, color: kTextLightColor),
                 ),
                 TextField(
@@ -174,7 +174,7 @@ class _PaymentPageState extends State<PaymentPage>
                     enabledBorder: const OutlineInputBorder(
                         borderSide:
                             BorderSide(color: detailImageBorder, width: 1)),
-                    hintText: "Eshmatov Toshmat",
+                    hintText: "Ismatova Iroda",
                     hintStyle: const TextStyle(color: kTextLightColor),
                     suffixIcon: IconButton(
                       icon: const Icon(
@@ -208,7 +208,7 @@ class _PaymentPageState extends State<PaymentPage>
                 const SizedBox(
                   height: 40,
                 ),
-                payAndBuyButton(isPaid ? "To'landi" : "To'lash", () {
+                payAndBuyButton(isPaid ? "Saqlandi" : "Saqlash", () {
                   showPaidDialog();
                   toggle();
                 }),
